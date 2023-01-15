@@ -1,6 +1,6 @@
 package com.hexagonal.produtos.adapters.inbound.controller.response;
 
-import com.hexagonal.produtos.domain.ProductInterface;
+import com.hexagonal.produtos.application.domain.ProductInterface;
 
 public class ProductResponse {
 

@@ -1,7 +1,7 @@
 package com.hexagonal.produtos.adapters.inbound.controller.request;
 
-import com.hexagonal.produtos.domain.Product;
-import com.hexagonal.produtos.domain.ProductInterface;
+import com.hexagonal.produtos.application.domain.Product;
+import com.hexagonal.produtos.application.domain.ProductInterface;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

@@ -1,9 +1,9 @@
-package com.hexagonal.produtos.domain;
+package com.hexagonal.produtos.application.domain;
 
 import java.util.UUID;
 
-import static com.hexagonal.produtos.domain.ProductStatus.DISABLED;
-import static com.hexagonal.produtos.domain.ProductStatus.ENABLED;
+import static com.hexagonal.produtos.application.domain.ProductStatus.DISABLED;
+import static com.hexagonal.produtos.application.domain.ProductStatus.ENABLED;
 import static java.util.Objects.isNull;
 
 public class Product implements ProductInterface {

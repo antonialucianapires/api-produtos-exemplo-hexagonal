@@ -1,4 +1,4 @@
-package com.hexagonal.produtos.domain;
+package com.hexagonal.produtos.application.domain;
 
 public enum ProductStatus {
     DISABLED,

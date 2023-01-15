@@ -1,12 +1,14 @@
 package com.hexagonal.produtos.domain;
 
+import com.hexagonal.produtos.application.domain.Product;
+import com.hexagonal.produtos.application.domain.ProductInterface;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static com.hexagonal.produtos.domain.ProductStatus.DISABLED;
-import static com.hexagonal.produtos.domain.ProductStatus.ENABLED;
+import static com.hexagonal.produtos.application.domain.ProductStatus.DISABLED;
+import static com.hexagonal.produtos.application.domain.ProductStatus.ENABLED;
 import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(SpringExtension.class)
 class ProductTest {

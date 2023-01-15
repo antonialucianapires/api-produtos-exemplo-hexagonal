@@ -2,7 +2,7 @@ package com.hexagonal.produtos.application.usecases;
 
 import com.hexagonal.produtos.application.ports.inbound.CreateProductUseCasePort;
 import com.hexagonal.produtos.application.ports.outbound.SaveProductAdapterPort;
-import com.hexagonal.produtos.domain.ProductInterface;
+import com.hexagonal.produtos.application.domain.ProductInterface;
 import org.springframework.stereotype.Component;
 
 @Component
