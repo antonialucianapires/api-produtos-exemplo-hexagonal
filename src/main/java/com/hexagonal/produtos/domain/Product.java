@@ -74,7 +74,7 @@ public class Product implements ProductInterface {
                 throw new RuntimeException("the price must be greater or equal zero");
             }
 
-            if (!this.id.toString().matches("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")) {
+            if (!this.id.matches("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")) {
                 throw new RuntimeException("the id must be in the uuid pattern");
             }
 

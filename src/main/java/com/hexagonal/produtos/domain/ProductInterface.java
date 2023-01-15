@@ -1,7 +1,5 @@
 package com.hexagonal.produtos.domain;
 
-import java.util.UUID;
-
 public interface ProductInterface {
 
     String getId();
