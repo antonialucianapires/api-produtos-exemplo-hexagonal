@@ -21,18 +21,6 @@ public class ProductReceivedEvent {
         return price;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
     public ProductInterface toProductDomain() {
         var domain = new Product();
         domain.setName(this.name);
