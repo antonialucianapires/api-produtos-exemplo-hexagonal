@@ -1,0 +1,40 @@
+package com.hexagonal.produtos.application.usecases;
+
+import com.hexagonal.produtos.application.domain.Product;
+import com.hexagonal.produtos.application.domain.ProductInterface;
+import com.hexagonal.produtos.application.ports.outbound.SendProductsForDistributionAdapterPort;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
+@ExtendWith(SpringExtension.class)
+class SendProductsForDistributionUseCaseTest {
+
+    @InjectMocks
+    private SendProductsForDistributionUseCase sendProductsForDistributionUseCase;
+
+    @Mock
+    private SendProductsForDistributionAdapterPort sendProductsForDistributionAdapterPort;
+
+    @Test
+    void send() {
+
+        ProductInterface product = new Product();
+        product.setName("Mousepad");
+        product.setPrice(250.00);
+
+        var products = List.of(product);
+
+        sendProductsForDistributionUseCase.send(products);
+
+        verify(sendProductsForDistributionAdapterPort, times(1)).send(products);
+    }
+}
