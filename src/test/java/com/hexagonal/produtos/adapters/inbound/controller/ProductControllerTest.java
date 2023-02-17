@@ -1,8 +1,8 @@
 package com.hexagonal.produtos.adapters.inbound.controller;
 
 import com.hexagonal.produtos.adapters.inbound.controller.request.CreateProductRequest;
-import com.hexagonal.produtos.application.ports.inbound.CreateProductUseCasePort;
 import com.hexagonal.produtos.application.domain.Product;
+import com.hexagonal.produtos.application.ports.inbound.CreateProductUseCasePort;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static com.hexagonal.produtos.application.domain.ProductStatus.ENABLED;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)

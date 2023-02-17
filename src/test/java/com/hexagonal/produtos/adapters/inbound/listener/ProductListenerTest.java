@@ -1,9 +1,7 @@
 package com.hexagonal.produtos.adapters.inbound.listener;
 
 import com.amazon.sqs.javamessaging.message.SQSTextMessage;
-import com.hexagonal.produtos.adapters.inbound.listener.events.ProductReceivedEvent;
 import com.hexagonal.produtos.application.domain.ProductInterface;
-import com.hexagonal.produtos.application.domain.ProductStatus;
 import com.hexagonal.produtos.application.ports.inbound.CreateProductUseCasePort;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,10 +10,7 @@ import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.jms.JMSException;
-import javax.jms.TextMessage;
 
-import static com.hexagonal.produtos.application.domain.ProductStatus.DISABLED;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.only;
 import static org.mockito.Mockito.verify;

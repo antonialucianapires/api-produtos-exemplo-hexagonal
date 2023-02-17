@@ -1,8 +1,8 @@
 package com.hexagonal.produtos.application.usecases;
 
-import com.hexagonal.produtos.application.ports.outbound.SaveProductAdapterPort;
 import com.hexagonal.produtos.application.domain.Product;
 import com.hexagonal.produtos.application.domain.ProductInterface;
+import com.hexagonal.produtos.application.ports.outbound.SaveProductAdapterPort;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

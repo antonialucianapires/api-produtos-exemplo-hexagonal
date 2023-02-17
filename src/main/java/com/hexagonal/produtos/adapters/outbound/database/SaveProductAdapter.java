@@ -2,8 +2,8 @@ package com.hexagonal.produtos.adapters.outbound.database;
 
 import com.hexagonal.produtos.adapters.outbound.database.entities.ProductEntity;
 import com.hexagonal.produtos.adapters.outbound.database.repository.ProductRepository;
-import com.hexagonal.produtos.application.ports.outbound.SaveProductAdapterPort;
 import com.hexagonal.produtos.application.domain.ProductInterface;
+import com.hexagonal.produtos.application.ports.outbound.SaveProductAdapterPort;
 import org.springframework.stereotype.Component;
 
 @Component

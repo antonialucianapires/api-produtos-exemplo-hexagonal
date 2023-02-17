@@ -1,6 +1,5 @@
 package com.hexagonal.produtos.adapters.outbound.jobs;
 
-import com.google.gson.Gson;
 import com.hexagonal.produtos.adapters.outbound.producer.GenericProducerSQS;
 import com.hexagonal.produtos.application.ports.inbound.CreateProductUseCasePort;
 import com.hexagonal.produtos.application.ports.inbound.GetProductsUseCasePort;
